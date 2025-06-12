@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="css/szolgaltatasok.css" />
     <link rel="stylesheet" href="css/rolam.css" />
     <link rel="stylesheet" href="css/munkaim.css" />
+    <link rel="stylesheet" href="css/kapcsolat.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
       rel="stylesheet"
@@ -31,7 +33,7 @@
   </head>
   <body>
     <header>
-      <div class="logo-es-motto">
+      <div class="logo-es-motto" onclick="window.location.reload()">
         <h1>WEB FIZZ</h1>
         <p>Weboldal készítés</p>
       </div>
@@ -67,7 +69,7 @@
 
       <div class="rolam" id="rolam">
         <h2 class="nevem">Vincze Dániel</h2>
-        <img class="kepem" src="pontok osszekotve.avif" alt="" />
+        <img class="kepem" src="images/niggsok.png" alt="" />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque hic
           quisquam vitae, ut doloremque dolores dignissimos pariatur quo
@@ -165,6 +167,33 @@
           </div>
         </div>
       </div>
+      <div class="kapcsolat">
+        <h2>Kapcsolat</h2>
+        <div class="contact-container"> <!-- New wrapper for columns -->
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>info@webfizz.hu</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+36 30 123 4567</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Budapest, Magyarország</span>
+            </div>
+          </div>
+          <form class="contact-form">
+            <input type="text" placeholder="Név" required>
+            <input type="email" placeholder="E-mail" required>
+            <textarea placeholder="Üzenet" required></textarea>
+            <button type="submit">Küldés</button>
+          </form>
+        </div>
+      </div>
+
+
     </main>
   </body>
 </html>

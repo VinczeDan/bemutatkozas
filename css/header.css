@@ -95,6 +95,9 @@ li a :not(:last-child)::before {
   background-color: #333;
   transition: all 0.3s ease;
 }
+.logo-es-motto:hover{
+  cursor: pointer;
+}
 
 /* Mobile styles */
 @media (max-width: 878px) {
